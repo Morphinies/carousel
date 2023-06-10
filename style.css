@@ -21,10 +21,37 @@ picture {
   height: 80vh;
   display: grid;
   overflow: hidden;
+  position: relative;
   align-self: center;
   border-radius: 15px;
   justify-content: center;
   border: 0.25rem solid rgb(60, 60, 60);
+}
+
+.btn{
+  top: 50%;
+  size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.btn:hover{
+  transition: all .25s;
+  background-color: #ccc;
+}
+
+#btn-next{
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+#btn-back{
+  left: 0;
+  display: none;
+  border-radius: 0 5px 5px 0;
 }
 
 .img {
